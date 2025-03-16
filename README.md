@@ -30,3 +30,74 @@ To compile the program, use the following command:
 g++ -o bin/kth_smallest src/kth_smallest.cpp
 ```
 
+## Execution:
+
+Run the compiled binary using:
+
+```sh
+./bin/kth_smallest
+```
+### Example Run:
+```sh
+Enter number of nodes in BST: 5
+Enter 5 space-separated values for BST: 3 1 4 2 5
+Enter value of k (1-based index): 3
+Kth smallest element: 3
+```
+
+## Running Tests
+
+### Test Cases
+
+- Test Case 1: Balanced BST
+Input:
+
+```sh
+Copy
+Edit
+Enter number of nodes in BST: 5
+Enter 5 space-separated values for BST: 3 1 4 2 5
+Enter value of k (1-based index): 2
+```
+Output:
+```sh
+Kth smallest element: 2
+```
+- Test Case 2: Skewed BST (Right Heavy)
+Input:
+
+```sh
+Enter number of nodes in BST: 4
+Enter 4 space-separated values for BST: 1 2 3 4
+Enter value of k (1-based index): 3
+```
+Output:
+```sh
+Kth smallest element: 3
+```
+- Test Case 3: Edge Case (k is Maximum)
+Input:
+
+```sh
+Enter number of nodes in BST: 3
+Enter 3 space-separated values for BST: 2 1 3
+Enter value of k (1-based index): 3
+```
+Output:
+
+```sh
+Kth smallest element: 3
+```
+- Test Case 4: Invalid k (Out of Bounds)
+Input:
+
+```sh
+Enter number of nodes in BST: 4
+Enter 4 space-separated values for BST: 10 5 15 3
+Enter value of k (1-based index): 5
+```
+Output:
+
+```sh
+Invalid input: k should be between 1 and 4
+```
