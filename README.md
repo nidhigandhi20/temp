@@ -53,8 +53,6 @@ Kth smallest element: 3
 Input:
 
 ```sh
-Copy
-Edit
 Enter number of nodes in BST: 5
 Enter 5 space-separated values for BST: 3 1 4 2 5
 Enter value of k (1-based index): 2
